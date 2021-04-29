@@ -16,6 +16,7 @@ const mount = (el, { onNavigate, defaultHistory, initialPath }) => {
     history.listen(onNavigate);
   }
 
+  console.log("Mouting React Home");
   ReactDOM.render(<App history={history} />, el);
 
   return {
